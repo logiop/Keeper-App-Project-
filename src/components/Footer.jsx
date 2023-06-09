@@ -1,5 +1,10 @@
 import React from "react";
 
 export default function Footer() {
-  return <p className="footerP">@Copyright ⓒ 2023</p>;
+  const year = new Date().getFullYear();
+  return (
+    <footer>
+      <p>Copyright ⓒ {year}</p>
+    </footer>
+  );
 }
